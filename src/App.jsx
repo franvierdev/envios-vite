@@ -6,7 +6,7 @@ import { Cabecera } from './header.jsx'
 import { Pie } from './foot.jsx'
 import { Prices } from './Prices.jsx'
 import { Dia } from './Dia.jsx'
-import { Paises } from './Paises'
+import { Paises } from './Paises.jsx'
 import { Bancos } from './Bancos'
 
 function App() {
