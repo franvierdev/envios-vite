@@ -22,7 +22,7 @@ export function Bancos() {
       />
       <p class="mt-1 text-white text-md text-shadow font-semibold
       ">
-        Transferencias
+
       </p>
       <img
         class="bg-slate-50/60 rounded-md drop-shadow-lg p-1 h-8  border-2 border-white/70 "
@@ -45,7 +45,7 @@ export function Bancos() {
 
       />
       <p class="mt-3 text-white text-shadow text-md font-semibold" >
-        Pago movil
+
       </p>
       <img
         class="bg-slate-50/60 rounded-md ps-1 pe-1 pb-1 h-12 drop-shadow-lg  border-2 border-white/70 "
