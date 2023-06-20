@@ -2,6 +2,7 @@ import peru from '../imgs/peru.png'
 import venezuela from '../imgs/venezuela.png'
 import colombia from '../imgs/colombia.png'
 
+
 export function Paises() {
   return <div className="flex justify-center mt-6">
     <img src={peru} className='w-10 h-9' alt="..." />
