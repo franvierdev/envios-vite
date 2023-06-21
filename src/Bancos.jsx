@@ -6,7 +6,7 @@ import logo from '../imgs/logo.png'
 import pngwing from '../imgs/pngwing.png'
 
 export function Bancos() {
-  return <div className=" my-4 py-2 grid m-auto w-max shadow-lg bg-green-700/40  border-2 border-green-400/40  rounded-xl">
+  return <div className=" my-6 py-2 grid mx-auto w-max shadow-lg bg-green-700/40  border-2 border-green-400/40  rounded-xl">
     <div className="flex justify-center gap-4 pb-2 mx-4 mt-4">
       <img
         className="bg-slate-50/60 shadow-xl border-2 border-white/70 rounded-md p-1 w-16 "

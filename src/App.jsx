@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div
-      className='bgimg h-auto'>
+      className='bgimg'>
       <Cabecera />
       <Dia />
       <Prices />
