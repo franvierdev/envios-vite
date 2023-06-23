@@ -11,7 +11,7 @@ export function Prices() {
     const dolar = +titledolar - (+titledolar * 0.05)
     const dolar6 = +titledolar - (+titledolar * 0.06)
     const dolar7 = +titledolar - (+titledolar * 0.07)
-    const soles = dolar * 0.28
+    const soles = dolar * 0.275
     const pesos = dolar6 * 0.24
     console.log(dolar, soles)
     setTitledolar(dolar7.toFixed(2))
