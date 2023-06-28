@@ -13,7 +13,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div
+    <div className='bg-green-600'> <div
       className='bgimg'>
       <Cabecera />
       <Dia />
@@ -22,8 +22,11 @@ function App() {
       <Bancos />
       <Pie />
 
+    </div>
+      <div>
+        <Prices />
 
-
+      </div>
 
 
       {/* <div>
@@ -47,6 +50,9 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
     </div>
+
+
+
   )
 }
 
