@@ -1,26 +1,22 @@
 import { useState } from 'react'
+import { Calculadora } from './calculadora';
+export function Prices({ title, setTitle, Sol, setSol }) {
 
-export function Prices() {
 
-  const [titledolar, setTitledolar] = useState([]);
-  const [titlesol, setTitlesol] = useState([]);
+
   const [titlepesos, setTitlepesos] = useState([]);
 
   function Calcular() {
+    const dolar = +title - (+title * 0.05)
+    const dolar7 = +title - (+title * 0.07)
+    const soles = dolar * 0.2741
+    const pesos = (+title - (+title * 0.06)) * 0.245
 
-    const dolar = +titledolar - (+titledolar * 0.05)
-    const dolar7 = +titledolar - (+titledolar * 0.07)
-    const soles = dolar * 0.273
-    const pesos = (+titledolar - (+titledolar * 0.06)) * 0.245
-    console.log(dolar, soles)
-    setTitledolar(dolar7.toFixed(2))
-    setTitlesol(soles.toFixed(2))
+    setTitle(dolar7.toFixed(2))
+    setSol(soles.toFixed(2))
     setTitlepesos(pesos.toFixed(2))
+
   }
-
-
-
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,7 +36,7 @@ export function Prices() {
           <button className=' text-green-900 font-bold text-2xl px-2 py-1 '>1 Dolar</button>
           <p className='text-3xl text-gray-100 text-shadow1'>=</p>
           <input className=' py-1 text-shadow1 text-2xl  font-semibold text-yellow-400 bg-transparent border-gray-700 w-24' placeholder="USD"
-            onChange={(e) => setTitledolar(e.target.value)} value={titledolar} required autoFocus />
+            onChange={(e) => setTitle(e.target.value)} value={title} required autoFocus />
           <span className='text-shadow1 text-yellow-400 font-semibold text-xl  ms-64 mt-1  absolute' >Bs</span>
         </ul>
 
@@ -50,7 +46,7 @@ export function Prices() {
           <button className=' text-green-900 text-2xl font-bold px-2 py-1 ' disabled={true} >1 Sol</button>
           <p className='text-3xl text-gray-100 text-shadow1'>=</p>
           <input className=' px-3 py-1 text-shadow1 text-2xl bg-transparent font-semibold w-24 text-yellow-400' placeholder="PEN" disabled
-            onChange={(e) => setTitlesol(e.target.value)} value={titlesol} autoFocus />
+            onChange={(e) => setSol(e.target.value)} value={Sol} autoFocus />
           <span className='text-shadow1 text-yellow-400 font-semibold text-xl  ms-64 mt-1  absolute' >Bs</span>
 
         </ul>
