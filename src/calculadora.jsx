@@ -1,4 +1,3 @@
-import { Prices } from './Prices'
 import { useState } from 'react'
 export function Calculadora({ Sol, setSol }) {
 

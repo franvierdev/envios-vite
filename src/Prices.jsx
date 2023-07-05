@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Calculadora } from './calculadora';
+
 export function Prices({ title, setTitle, Sol, setSol }) {
 
 
@@ -8,9 +8,9 @@ export function Prices({ title, setTitle, Sol, setSol }) {
 
   function Calcular() {
     const dolar = +title - (+title * 0.05)
-    const dolar7 = +title - (+title * 0.07)
-    const soles = dolar * 0.2741
-    const pesos = (+title - (+title * 0.06)) * 0.245
+    const dolar7 = +title - (+title * 0.06)
+    const soles = dolar * 0.2762
+    const pesos = (+title - (+title * 0.06)) * 0.25
 
     setTitle(dolar7.toFixed(2))
     setSol(soles.toFixed(2))
