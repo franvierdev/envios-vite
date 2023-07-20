@@ -32,7 +32,7 @@ export function Calculadora({ Sol, Pesos, title }) {
 
     <h3 className=''>Cantidad</h3>
     <input className='w-40 rounded-sm ps-1' onChange={(e) => setCantidad(e.target.value)} value={Cantidad} placeholder='' />
-    <button className='bg-green-600/70 ms-5 lg:ms-2 -mt-24 px-14 lg:px-16  py-20 absolute rounded-md'>Calcular</button>
+    <button className='bg-green-600/70 ms-5 lg:ms-2 -mt-24 px-10 lg:px-16  py-20 absolute rounded-md'>Calcular</button>
     <h3>Total Bs</h3>
     <input className='w-40 rounded-sm ps-1' onChange={(e) => { setTotal(e.target.value) }} value={Total} />
 
