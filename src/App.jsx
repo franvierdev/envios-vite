@@ -11,18 +11,19 @@ import { Calculadora } from './calculadora'
 function App() {
   const [titledolar, setTitledolar] = useState([]);
   const [titlesol, setTitlesol] = useState([]);
+  const [titlepesos, setTitlepesos] = useState([]);
   // const [count, setCount] = useState(0)
 
   return (
     <div>
-      < div className='bgimg'>
-        <Calculadora title={titledolar} Sol={titlesol} setSol={setTitlesol} setTitle={setTitledolar} />
+      < div className='lg:grid lg:grid-cols-2 bgimg'>
         <Cabecera />
         <Dia />
-        <Prices title={titledolar} setTitle={setTitledolar} Sol={titlesol} setSol={setTitlesol} />
+        <Prices title={titledolar} setTitle={setTitledolar} Sol={titlesol} setSol={setTitlesol} Pesos={titlepesos} setPesos={setTitlepesos} />
         <Paises />
         <Bancos />
         <Pata />
+        <Calculadora title={titledolar} setTitle={setTitledolar} Sol={titlesol} setSol={setTitlesol} Pesos={titlepesos} setPesos={setTitlepesos} />
       </div>
       <div>
 

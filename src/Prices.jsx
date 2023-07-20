@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-export function Prices({ title, setTitle, Sol, setSol }) {
+export function Prices({ title, setTitle, Sol, setSol, Pesos, setPesos }) {
 
 
 
-  const [titlepesos, setTitlepesos] = useState([]);
+
 
   function Calcular() {
     const dolar = +title - (+title * 0.05)
@@ -14,7 +14,7 @@ export function Prices({ title, setTitle, Sol, setSol }) {
 
     setTitle(dolar7.toFixed(2))
     setSol(soles.toFixed(2))
-    setTitlepesos(pesos.toFixed(2))
+    setPesos(pesos.toFixed(2))
 
   }
 
@@ -26,7 +26,7 @@ export function Prices({ title, setTitle, Sol, setSol }) {
   }
 
   return (
-    <div>
+    <div className='col-start-1'>
       <form onSubmit={handleSubmit} className="grid gap-3 text-center mt-6">
 
 
@@ -57,7 +57,7 @@ export function Prices({ title, setTitle, Sol, setSol }) {
           <button className='  text-green-900 text-2xl font-bold px-2 py-1' disabled={true} >1,000 COP</button>
           <p className='text-3xl text-gray-100 text-shadow1'>=</p>
           <input className='px-3 py-1 text-shadow1 font-semibold text-2xl text-yellow-400 bg-transparent w-24' placeholder="COP" disabled
-            onChange={(e) => setTitlepesos(e.target.value)} value={titlepesos} autoFocus />
+            onChange={(e) => setPesos(e.target.value)} value={Pesos} autoFocus />
           <span className='text-shadow1 text-yellow-400 font-semibold text-xl  ms-64 mt-1  absolute' >Bs</span>
         </ul>
 
