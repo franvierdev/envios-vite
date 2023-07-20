@@ -4,7 +4,7 @@ import colombia from '../imgs/colombia.png'
 
 
 export function Paises() {
-  return <div className="col-start-1 flex justify-center mt-6">
+  return <div className="col-start-1 flex justify-center mt-4 lg:mt-14 ">
     <img src={peru} className='w-10 rounded-full border-2 border-gray-300' alt="..." />
     <p
       className=" px-2 mt-1 text-white fw-bold text-shadow text-xl"
