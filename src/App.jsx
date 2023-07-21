@@ -12,6 +12,8 @@ function App() {
   const [titledolar, setTitledolar] = useState([]);
   const [titlesol, setTitlesol] = useState([]);
   const [titlepesos, setTitlepesos] = useState([]);
+  const soles = 'Bs a Soles'
+
   // const [count, setCount] = useState(0)
 
   return (
@@ -24,6 +26,7 @@ function App() {
         <Bancos />
         <Pata />
         <Calculadora title={titledolar} setTitle={setTitledolar} Sol={titlesol} setSol={setTitlesol} Pesos={titlepesos} setPesos={setTitlepesos} />
+        <Calculadora title={titledolar} setTitle={setTitledolar} soles={soles} Sol={titlesol} setSol={setTitlesol} Pesos={titlepesos} setPesos={setTitlepesos} />
       </div>
       <div>
 

@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import Select from 'react-select'
-export function Calculadora({ Sol, Pesos, title }) {
+export function Calculadora({ Sol, Pesos, title, soles, }) {
 
   const [Cantidad, setCantidad] = useState([]);
   const [Total, setTotal] = useState([]);
   const [proveedor, setProveedor] = useState();
   const options = [
-    { value: Sol, label: 'Soles' },
+    { value: Sol, label: soles },
     { value: Pesos, label: 'Pesos' },
     { value: title, label: 'Dolares' },
   ]
@@ -22,7 +22,7 @@ export function Calculadora({ Sol, Pesos, title }) {
   }
   const handleSelectChange = ({ value }) => (console.log(value), setProveedor(value))
 
-  return <form className='m-auto lg:m-0 col-start-2 row-start-3 row-end-5 bg-slate-500/90 border-2 border-slate-200/40 rounded-xl max-w-sm p-5 gap-10 lg:max-w-md  lg:justify-items-start leading-loose relative' onSubmit={handleSubmit}>
+  return <form className='mt-4 lg:m-0 col-start-2 row-start-3 row-end-5 bg-slate-500/90 border-2 border-slate-200/40 rounded-xl max-w-sm p-5 gap-10 lg:max-w-md  lg:justify-items-start leading-loose ' onSubmit={handleSubmit}>
     <h3 className='text-lg text-green-400 font-bold'>Moneda</h3>
     <Select className='w-40 h-10'
       placeholder='Moneda'
