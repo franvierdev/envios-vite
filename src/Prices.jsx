@@ -26,11 +26,11 @@ export function Prices({ title, setTitle, Sol, setSol, Pesos, setPesos }) {
   }
 
   return (
-    <div className='col-start-1'>
+    <div className='col-start-1 row-start-3 justify-self-end lg:mt-10'>
       <form onSubmit={handleSubmit} className="grid gap-3 text-center mt-6">
 
 
-        <ul className="flex justify-between border-solid bg-gradient-to-r from-gray-100/90 
+        <div className="flex justify-between border-solid bg-gradient-to-r from-gray-100/90 
         to-green-700/90 w-72 rounded-md mx-auto">
 
           <button className=' text-green-900 font-bold text-2xl px-2 py-1 '>1 Dolar</button>
@@ -38,7 +38,7 @@ export function Prices({ title, setTitle, Sol, setSol, Pesos, setPesos }) {
           <input className=' py-1 text-shadow1 text-2xl  font-semibold text-yellow-400 bg-transparent border-gray-700 w-24' placeholder="USD"
             onChange={(e) => setTitle(e.target.value)} value={title} required autoFocus />
           <span className='text-shadow1 text-yellow-400 font-semibold text-xl  ms-64 mt-1  absolute' >Bs</span>
-        </ul>
+        </div>
 
 
         <ul className='flex rounded-md mx-auto justify-between bg-gradient-to-r  from-gray-100/90 to-green-700/90 w-72'>

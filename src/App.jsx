@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      < div className='lg:grid lg:grid-cols-2 bgimg gap-4'>
+      < div className='lg:grid lg:grid-cols-2 bgimg gap-4 gap-x-40'>
         <Cabecera />
         <Dia />
         <Prices title={titledolar} setTitle={setTitledolar} Sol={titlesol} setSol={setTitlesol} Pesos={titlepesos} setPesos={setTitlepesos} />

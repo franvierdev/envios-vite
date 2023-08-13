@@ -1,6 +1,6 @@
 
 
-export function Dia() {
+export function Dia(cls) {
 
   const dia = [
     "Domingo",
@@ -29,7 +29,7 @@ export function Dia() {
   function CalcularDia() {
 
     var f = new Date();
-    return <div className="mt-2">
+    return <div className={'mt-2 col-span-full'}>
       <h2 className="text-2xl font-semibold text-white text-shadow text-center" >{dia[f.getDay()]} {f.getDate()} de {meses[f.getMonth()]} del {f.getFullYear()}</h2>
 
 
