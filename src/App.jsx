@@ -7,6 +7,7 @@ import { Dia } from './Dia.jsx'
 import { Paises } from './banderas.jsx'
 import { Bancos } from './Bancos'
 import { Calculadora } from './calculadora'
+import { SideBar } from './sidebar'
 
 function App() {
   const [titledolar, setTitledolar] = useState([]);
@@ -20,6 +21,7 @@ function App() {
   return (
     <div>
       < div className='lg:grid lg:grid-cols-2 bgimg gap-4 gap-x-40'>
+        <SideBar />
         <Cabecera />
         <Dia />
         <Prices title={titledolar} setTitle={setTitledolar} Sol={titlesol} setSol={setTitlesol} Pesos={titlepesos} setPesos={setTitlepesos} />

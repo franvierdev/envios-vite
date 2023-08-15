@@ -6,7 +6,7 @@ import logo from '../imgs/logo.png'
 import pngwing from '../imgs/pngwing.png'
 
 export function Bancos() {
-  return <div className="col-start-1 m-auto lg:m-0 lg:justify-self-end mt-4 pt-2 pb-5 max-h-44 w-max shadow-lg bg-green-700/40  border-2 border-green-400/40  rounded-xl">
+  return <div className="col-start-1 m-auto lg:-me-2 lg:justify-self-end mt-4 pt-2 pb-5 max-h-44 w-max shadow-lg bg-green-700/40  border-2 border-green-400/40  rounded-xl">
     <div className="flex justify-center gap-4 pb-2 mx-4 mt-4">
       <img
         className="bg-slate-50/60 shadow-xl border-2 border-white/70 rounded-md p-1 w-16 max-h-14"
@@ -25,7 +25,7 @@ export function Bancos() {
 
       </p>
       <img
-        className="bg-slate-50/60 rounded-md drop-shadow-lg p-1 h-8  border-2 border-white/70 "
+        className="bg-slate-50/60 rounded-md p-1 h-8  border-2 border-white/70 "
         src={logovzla}
         alt=""
 
@@ -33,13 +33,13 @@ export function Bancos() {
     </div>
     <div className="flex justify-center gap-4 ms-4">
       <img
-        className="bg-slate-50/60 rounded-md drop-shadow-lg px-2 pt-1 pb-1 h-12  border-2 border-white/70 "
+        className="bg-slate-50/60 rounded-md px-2 pt-1 pb-1 h-12  border-2 border-white/70 "
         src={daviplata}
         alt=""
 
       />
       <img
-        className="rounded-full ps-2 pe-2 pt-1 pb-1 bg-slate-50/60 drop-shadow-lg h-14  border-2 border-white/70 "
+        className="rounded-full ps-2 pe-2 pt-1 pb-1 bg-slate-50/60 h-14  border-2 border-white/70 "
         src={logo}
         alt=""
 
@@ -48,7 +48,7 @@ export function Bancos() {
 
       </p>
       <img
-        className="bg-slate-50/60 rounded-md ps-1 pe-1 pb-1 h-12 drop-shadow-lg  border-2 border-white/70 "
+        className="bg-slate-50/60 rounded-md ps-1 pe-1 pb-1 h-12 border-2 border-white/70 "
         src={pngwing}
         alt=""
 

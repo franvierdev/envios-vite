@@ -32,7 +32,7 @@ export function Calculadora({ Sol, Pesos, title, soles, peso, dolar, cls, nome }
 
   </div>
     <form onSubmit={handleSubmit}>
-      <h3 className='text-lg text-green-400 '>Moneda</h3>
+      <h3 className='text-lg text-green-400'>Moneda</h3>
       <Select className='w-40 h-8'
         placeholder='Moneda'
         options={options}
@@ -41,7 +41,7 @@ export function Calculadora({ Sol, Pesos, title, soles, peso, dolar, cls, nome }
 
       <h3 className='mt-4 text-lg text-green-400'>Cantidad</h3>
       <input className=' w-40 rounded-sm ps-1 h-6' onChange={(e) => setCantidad(e.target.value)} value={Cantidad} placeholder='' />
-      <button className='bg-green-600/75 border-2 border-green-400 ms-3 lg:ms-10 -mt-4 px-2  lg:px-8  pb-1 absolute rounded-md text-yellow-400 text-shadow1 font-bold text-2xl'>Calcular</button>
+      <button className='bg-green-600/75 border-2 border-green-400 ms-3 lg:ms-10 -mt-4 px-2  lg:px-8  pb-1 rounded-md text-yellow-400 text-shadow1 font-bold text-2xl'>Calcular</button>
       <h3 className=' text-lg text-green-400'>Total {(nome) ? moneda : 'Bs'}</h3>
       <input className='w-40 rounded-sm ps-1 h-6' onChange={(e) => { setTotal(e.target.value) }} value={Total} />
 
