@@ -26,18 +26,14 @@ export function Dia(cls) {
     "Diciembre",
   ];
 
-  function CalcularDia() {
+  var f = new Date();
 
-    var f = new Date();
-    return <div className={'mt-2 col-span-full'}>
-      <h2 className="text-2xl font-semibold text-white text-shadow text-center" >{dia[f.getDay()]} {f.getDate()} de {meses[f.getMonth()]} del {f.getFullYear()}</h2>
-
-
-
-    </div>
+  return <div className={'mt-2 col-span-full'}>
+    <h2 className="text-2xl font-semibold text-white text-shadow text-center" >{dia[f.getDay()]} {f.getDate()} de {meses[f.getMonth()]} del {f.getFullYear()}</h2>
+  </div>
 
 
-  }
-  return CalcularDia()
 }
+
+
 
