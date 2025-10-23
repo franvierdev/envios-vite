@@ -7,12 +7,12 @@ export function Prices({ title, setTitle, Sol, setSol, Pesos, setPesos }) {
 
 
   function Calcular() {
-    const dolar = +title - (+title * 0.05)
-    const dolar7 = +title - (+title * 0.07)
+    const dolar = +title - (+title * 0.1)
+    const dolar7 = +title - (+title * 0.06)
     const soles = (+dolar7 * 0.28)
     const pesos = (+title - (+title * 0.06)) * 0.25
 
-    setTitle(dolar7.toFixed(2))
+    setTitle(dolar.toFixed(2))
     setSol(soles.toFixed(2))
     setPesos(pesos.toFixed(2))
 
