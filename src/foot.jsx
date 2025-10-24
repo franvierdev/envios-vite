@@ -4,7 +4,8 @@ export function Pata() {
    <img src={whatsapp} className="bg-green-600/60 rounded-full w-8" alt="..."></img>
     <h2 className="text-2xl font-semibold text-gray-100 text-shadow">
        
-      +51 971 755 780
+      {/*+51 971 755 780*/}
++51 982 898 638
       
     </h2> 
   </div >
