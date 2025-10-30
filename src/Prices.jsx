@@ -1,6 +1,26 @@
 
 
+import { useEffect } from 'react';
+
 export function Prices({ title, setTitle, Sol, setSol, Pesos, setPesos }) {
+
+  useEffect(() => {
+    fetch('https://ve.dolarapi.com/v1/dolares/paralelo')
+      .then(res => res.json())
+      .then(data => {
+        const { promedio, variacion } = data;
+        setTitle(promedio);
+
+        const apiParams = {
+          moneda: 'dolar',
+          tipo: 'paralelo',
+          promedio,
+          variacion,
+        };
+
+        console.log('API Parameters:', apiParams);
+      });
+  }, [setTitle]);
 
 
 
