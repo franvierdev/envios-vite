@@ -20,13 +20,13 @@ export function Pata() {
         showIndicators={false}
         showArrows={false}
         interval={3000} // Change interval as needed
-        className=""
+        className="max-w-md"
       >
         {phoneNumbers.map((number, index) => (
-          <div key={index} className="flex">
+          <div key={index} className="flex gap-10">
             <img
               src={whatsapp}
-              className="bg-green-600/60 rounded-full w-4 mr-4 h-8"
+              className="bg-green-600/60 rounded-full w-8 mr-4 h-8"
               alt="whatsapp"
             />
             <h2 className="text-2xl font-semibold text-gray-100 text-shadow">
