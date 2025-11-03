@@ -26,7 +26,7 @@ export function Pata() {
           <div key={index} className="flex items-center justify-center">
             <img
               src={whatsapp}
-              className="bg-green-600/60 rounded-full w-8 mr-4"
+              className="bg-green-600/60 rounded-full w-8 mr-4 h-8"
               alt="whatsapp"
             />
             <h2 className="text-2xl font-semibold text-gray-100 text-shadow">
