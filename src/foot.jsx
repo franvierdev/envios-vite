@@ -20,7 +20,7 @@ export function Pata() {
         showIndicators={false}
         showArrows={false}
         interval={3000} // Change interval as needed
-        className="w-full max-w-md"
+        className=""
       >
         {phoneNumbers.map((number, index) => (
           <div key={index} className="flex">
