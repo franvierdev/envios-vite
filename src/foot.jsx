@@ -11,7 +11,7 @@ export function Pata() {
   ];
 
   return (
-    <div className="col-span-full flex justify-center bg-gradient-to-t from-green-700 via-green-700/70 to-transparent text-center mt-9 py-12">
+    <div className=" flex justify-center bg-gradient-to-t from-green-700 via-green-700/70 to-transparent text-center mt-9 py-12">
       <Carousel
         autoPlay
         infiniteLoop
