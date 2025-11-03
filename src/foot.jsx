@@ -23,7 +23,7 @@ export function Pata() {
         className="w-full max-w-md"
       >
         {phoneNumbers.map((number, index) => (
-          <div key={index} className="flex items-center justify-center">
+          <div key={index} className="flex">
             <img
               src={whatsapp}
               className="bg-green-600/60 rounded-full w-8 mr-4 h-8"
