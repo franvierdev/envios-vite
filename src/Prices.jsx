@@ -45,7 +45,7 @@ export function Prices({ title, setTitle, Sol, setSol, Pesos, setPesos }) {
 
           <button className=' text-green-900 text-2xl font-bold px-2 py-1 ' disabled={true} >1 Sol</button>
           <p className='text-3xl text-gray-100 text-shadow1 ms-5'>=</p>
-          <input className='  py-1 me-2 text-shadow1 text-2xl bg-transparent font-semibold w-24 text-yellow-400' placeholder="PEN" disabled
+          <input className='  py-1 me-2 text-shadow1 text-2xl bg-transparent font-semibold w-28 text-yellow-400' placeholder="PEN" disabled
             onChange={(e) => setSol(e.target.value)} value={Sol} autoFocus />
           <span className='text-shadow1 text-yellow-400 font-semibold text-xl mt-1 me-3 -ms-20 ' >Bs</span>
 
