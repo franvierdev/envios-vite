@@ -1,7 +1,8 @@
 import thumbnail from '../imgs/thumbnail.png'
 import bcp from '../imgs/bcp.png'
 import logovzla from '../imgs/logovzla.png'
-import daviplata from '../imgs/daviplata.png'
+import logomercantil from '../imgs/mercantil-f-azul.png'
+import nequi from '../imgs/nequi.png'
 import logo from '../imgs/logo.png'
 import pngwing from '../imgs/pngwing.png'
 
@@ -30,16 +31,25 @@ export function Bancos() {
         alt=""
 
       />
+      <img
+        className="bg-slate-50/60 rounded-md  h-14  border-2 border-white/70 "
+        src={logomercantil}
+        alt=""
+
+      />
     </div>
     <div className="flex justify-center gap-4 ms-4">
       <img
         className="bg-slate-50/60 rounded-md px-2 pt-1 pb-1 h-12  border-2 border-white/70 "
-        src={daviplata}
+        src={nequi}
         alt=""
 
       />
+      <p className="mt-3 text-white text-shadow text-md font-semibold" >
+
+      </p>
       <img
-        className="rounded-full ps-2 pe-2 pt-1 pb-1 bg-slate-50/60 h-14  border-2 border-white/70 "
+        className="rounded-md ps-2 pe-2 pt-1 pb-1 bg-slate-50/60 h-14  border-2 border-white/70 "
         src={logo}
         alt=""
 
