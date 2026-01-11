@@ -16,7 +16,7 @@ export function Bancos() {
 
       />
       <img
-        className="bg-blue-800/70 shadow-xl rounded-md border-2 border-blue-700/70 p-1 h-8"
+        className="bg-blue-800/70 shadow-xl rounded-md self-center border-2 border-blue-700/70 p-1 h-8"
         src={bcp}
         alt="..."
 
@@ -26,7 +26,7 @@ export function Bancos() {
 
       </p>
       <img
-        className="bg-slate-50/60 rounded-md p-1 h-8  border-2 border-white/70 "
+        className="bg-slate-50/60 rounded-md p-1 h-8 self-center  border-2 border-white/70 "
         src={logovzla}
         alt=""
 
