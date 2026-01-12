@@ -37,7 +37,7 @@ export function Pata() {
     { label: "KATHERINE P.", number: "+57 302 708 0728" }
   ];
 
-  return <div className="col-span-full flex justify-center  text-center mt-1  py-12 ">
+  return <div className="col-span-full flex justify-center  text-center mt-2  py-12 ">
     <div className="w-full max-w-sm mx-auto">
       <Swiper
         modules={[Navigation, Autoplay]}
