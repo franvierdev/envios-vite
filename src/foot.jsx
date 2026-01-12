@@ -32,28 +32,27 @@ import 'swiper/css/pagination';
 export function Pata() {
 
   const phoneNumbers = [
-    { label: "Atención al Cliente", number: "+58 412 1111111" },
-    { label: "Soporte Técnico", number: "+58 414 2222222" },
-    { label: "Ventas Directas", number: "+58 424 3333333" }
+    { label: "YULIANO C.", number: "+51 971 755 780" },
+    { label: "EVELIN G.", number: "+51 982 898 638" },
+    { label: "KATHERINE P.", number: "+57 302 708 0728" }
   ];
 
-  return <div className="col-span-full flex justify-center  text-center mt-9 py-12 ">
+  return <div className="col-span-full flex justify-center  text-center  py-12 ">
     <div className="w-full max-w-sm mx-auto">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
+
         navigation={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={{ delay: 8000, disableOnInteraction: true }}
         className="mySwiper rounded-xl  p-4 shadow-sm bg-gradient-to-t from-green-700 via-green-700/70 to-transparent"
       >
         {phoneNumbers.map((phone, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center justify-center py-8">
-              <p className="text-sm text-gray-500 font-semibold uppercase">
-                {phone.label}
-              </p>
+              <img src={whatsapp} className="bg-green-600/60 rounded-full w-8" alt="..."></img>
               <a
                 href={`tel:${phone.number}`}
                 className="text-2xl font-semibold text-gray-100 text-shadow"
