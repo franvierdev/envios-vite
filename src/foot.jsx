@@ -25,7 +25,7 @@ const phoneNumbers = [
 }*/
 import whatsapp from '../imgs/whatsapp.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -37,14 +37,14 @@ export function Pata() {
     { label: "KATHERINE P.", number: "+57 302 708 0728" }
   ];
 
-  return <div className="col-span-full flex justify-center  text-center  py-12 ">
+  return <div className="col-span-full flex justify-center  text-center mt-1  py-12 ">
     <div className="w-full max-w-sm mx-auto">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
 
-        navigation={true}
+        navigation={false}
         pagination={{ clickable: true }}
         autoplay={{ delay: 8000, disableOnInteraction: true }}
         className="mySwiper rounded-xl  p-4 shadow-sm bg-gradient-to-t from-green-700 via-green-700/70 to-transparent"
